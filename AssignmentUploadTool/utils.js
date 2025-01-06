@@ -1,0 +1,3 @@
+function showPage(pageLoaderFunction) {
+    pageLoaderFunction();
+}
