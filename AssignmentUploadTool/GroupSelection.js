@@ -40,7 +40,7 @@ function loadGroupSelection(courseName, assignmentName) {
             <div id="groupPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.2); width: 300px;">
                 <h2>Neue Gruppe erstellen</h2>
                 <input type="text" id="newGroupName" placeholder="Gruppenname" style="width: calc(100% - 20px); padding: 10px; font-size: 16px; margin-bottom: 15px;">
-                <button onclick="createGroup()" style="padding: 10px 20px; background-color: rgb(79, 153, 223); color: white; border: none; cursor: pointer; font-size: 18px; border-radius: 5px;">Gruppe erstellen</button>
+                <button onclick="createGroup('${assignmentName}')" style="padding: 10px 20px; background-color: rgb(79, 153, 223); color: white; border: none; cursor: pointer; font-size: 18px; border-radius: 5px;">Gruppe erstellen</button>
                 <button onclick="closePopup()" style="padding: 10px 20px; background-color: red; color: white; border: none; cursor: pointer; font-size: 18px; border-radius: 5px;">Abbrechen</button>
             </div>
         </div>
@@ -70,7 +70,7 @@ function createGroupPopup() {
     document.getElementById("groupPopup").style.display = "block";
 }
 
-function createGroup() {
+function createGroup(assignmentName) {
     const groupName = document.getElementById("newGroupName").value;
     if (groupName.trim()) {
         closePopup();
@@ -87,6 +87,3 @@ function closePopup() {
 function logout() {
     loadLoginPage();
 }
-
-
-
