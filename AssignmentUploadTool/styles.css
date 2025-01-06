@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.page {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    display: none;
+}
+
+.page.hidden {
+    display: none;
+}
+
+#dropZone {
+    margin: 20px auto;
+    width: 80%;
+    height: 100px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    background-color: #f9f9f9;
+}
+
+#dropZone.dragover {
+    border-color: #000;
+    color: #000;
+}
