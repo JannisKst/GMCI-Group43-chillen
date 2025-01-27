@@ -14,6 +14,7 @@ function loadTutorSubmissionPage(assignmentName, groupName) {
             <div style="margin-top: 20px;">
                 <button onclick="selectFile()" style="padding: 10px 20px; background-color:rgb(79, 153, 223); color: white; border: none; cursor: pointer; font-size: 18px; border-radius: 5px;">Auswählen</button>
                 <button onclick="submitAssignment()" style="padding: 10px 20px; background-color: rgb(79, 153, 223); color: white; border: none; cursor: pointer; font-size: 18px; border-radius: 5px;">Abgeben</button>
+                <button onclick="downloadAssignment()" style="padding: 10px 20px; background-color: rgb(79, 153, 223); color: white; border: none; cursor: pointer; font-size: 18px; border-radius: 5px;">Herunterladen</button>
             </div>
 
             <div style="margin-top: 20px;">
@@ -53,3 +54,8 @@ function submitAssignment() {
 function logout() {
     loadLoginPage();
 }
+
+function downloadAssignment() {
+    alert("Assignment wird Heruntergeladen!")
+}
+
